@@ -1,0 +1,42 @@
+﻿<ion-view view-title="Check">
+    <ion-content class="funcTab-content">
+        <div class="row">
+            <div class="col col-240px text-left stable-bg float-left">
+                <ion-scroll id="checkScroll">
+                    <ion-list>
+                        <ion-item ng-repeat="check in checks" ng-click="checkClick(check.Id,check.TypeName)">
+                            <p>
+                                {{check.TypeCode}}&nbsp;{{check.Time}}
+                                <div ng-switch="check.Status">
+                                    <div ng-switch-when="完成">
+                                        <div class="badge badge-balanced">完成</div>
+                                    </div>
+                                    <div ng-switch-when="已付费">
+                                        <div class="badge badge-calm">已付费</div>
+                                    </div>
+                                    <div ng-switch-when="开立">
+                                        <div class="badge badge-energized">开立</div>
+                                    </div>
+                                </div>
+                            </p>
+                            <p>{{check.Content}}</p>
+                        </ion-item>
+                    </ion-list>
+                </ion-scroll>
+            </div>
+            <div class="col lightyellow-bg text-left float-left padding">
+                <div class="font-size-18 text-center">{{hospitalName}}<br />{{currentCheckReport.type}}</div>
+                <div>【结果】：</div>
+                <div><span class="text-margin-left"></span>{{currentCheckReport.result}}</div>
+                <br />
+                <div>【检查所见】：</div>
+                <div><span class="text-margin-left"></span>{{currentCheckReport.findings}}</div>
+                <br />
+                <div>【检查诊断】：</div>
+                <div><span class="text-margin-left"></span>{{currentCheckReport.diagnosis}}</div>
+                <br />
+                <div class="float-right">报告时间：{{currentCheckReport.time}}</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

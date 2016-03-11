@@ -1,0 +1,30 @@
+﻿<!--<ion-nav-bar class="bar-stable">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+</ion-nav-bar>-->
+<div class="right-menu">
+    <div class="right-menu-content">
+        <button class="button button-clear ion-ios-undo-outline" ng-click="goBack()"></button>
+    </div>
+</div>
+<ion-tabs class="tabs-icon-left tabs-positive tabs-top">
+    <!--tabs-top-->
+    <ion-tab title="诊断" icon-off="ion-ios-glasses-outline" icon-on="ion-ios-glasses" href="#/tab/func/diagnosis">
+        <ion-nav-view name="rounds-diagnosis"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="医嘱" icon-off="ion-ios-book-outline" icon-on="ion-ios-book" href="#/tab/func/order">
+        <ion-nav-view name="rounds-order"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="检查" icon-off="ion-ios-medkit-outline" icon-on="ion-ios-medkit" href="#/tab/func/check">
+        <ion-nav-view name="rounds-check"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="检验" icon-off="ion-ios-flask-outline" icon-on="ion-ios-flask" href="#/tab/func/test">
+        <ion-nav-view name="rounds-test"></ion-nav-view>
+    </ion-tab>
+    <!--<ion-tab title="用血" icon-off="ion-ios-heart-outline" icon-on="ion-ios-heart" href="#/tab/rounds/func/blood">
+        <ion-nav-view name="rounds-blood"></ion-nav-view>
+    </ion-tab>-->
+    <ion-tab title="文书" icon-off="ion-ios-paper-outline" icon-on="ion-ios-paper" href="#/tab/func/medDoc">
+        <ion-nav-view name="rounds-medDoc"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>

@@ -1,0 +1,6 @@
+﻿.selectionTable { border: 1px solid #749fbc; border-collapse: collapse; text-align: center; width: 100%;/* margin-left: auto; margin-right: auto; margin-top: 5px;*/ }
+    /*.selectionTable tbody tr { cursor: pointer; }*/
+    .selectionTable td { height: 25px; border: solid #749fbc; border-width: 0px 1px 1px 0px; word-break: break-all; /** 设置当文本过长时换行 */ vertical-align: middle; }
+    .selectionTable th { height: 30px; border: solid #749fbc; border-width: 0px 1px 1px 0px; color: #0b3956; background-color: #d0e4f1; vertical-align: middle; }
+    .selectionTable > tbody > tr:nth-of-type(even) { background-color: #f3f3f3; }
+    .selectionTable > tbody > tr:nth-of-type(odd) { background-color: #ffffff; }

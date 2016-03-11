@@ -1,0 +1,19 @@
+﻿<ion-view view-title="Document">
+    <ion-content class="funcTab-content">
+        <div class="row">
+            <div class="col col-240px text-left stable-bg">
+                <ion-scroll id="medDocScroll">
+                    <ion-list>
+                        <ion-item ng-repeat="medDoc in medDocs" ng-click="medDocClick(medDoc.Id)">
+                            <p>{{medDoc.Name}}&nbsp;{{medDoc.Time}}</p>
+                            <p>{{medDoc.Content}}</p>
+                        </ion-item>
+                    </ion-list>
+                </ion-scroll>
+            </div>
+            <div class="col no-padding">
+                <iframe id="meddoc" frameborder="0" style="width:100%; height:100%; overflow:auto;" />
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

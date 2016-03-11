@@ -1,0 +1,34 @@
+﻿<ion-view view-title="Order">
+    <ion-content class="funcTab-content padding-5px">
+        <table class="selectionTable text-left">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>长临</th>
+                    <th>类别</th>
+                    <th>途径</th>
+                    <th>频次</th>
+                    <th class="width-20px"></th>
+                    <th class="width-33">医嘱内容</th>
+                    <th>剂量单位</th>
+                    <th>医生说明</th>
+                    <th>计价属性</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="order in orders">
+                    <td>{{order.OrderNo}}</td>
+                    <td>{{order.LimitationPeriod}}</td>
+                    <td>{{order.Category}}</td>
+                    <td>{{order.Way}}</td>
+                    <td>{{order.Frequency}}</td>
+                    <td>{{order.Line}}</td>
+                    <td>{{order.OrderContent}}</td>
+                    <td>{{order.Dosage}}</td>
+                    <td>{{order.Description}}</td>
+                    <td>{{order.ValuationAttribute}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </ion-content>
+</ion-view>

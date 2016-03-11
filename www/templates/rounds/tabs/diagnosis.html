@@ -1,0 +1,26 @@
+﻿<ion-view view-title="Diagnosis">
+    <ion-content class="funcTab-content padding-5px">
+        <table class="selectionTable table-striped">
+            <thead>
+                <tr>
+                    <th>诊断类别</th>
+                    <th class="width-20px"></th>
+                    <th class="width-50">诊断描述</th>
+                    <th>结果</th>
+                    <th>下达医生</th>
+                    <th>确诊时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="diagnosis in diagnosises">
+                    <td>{{diagnosis.Type}}</td>
+                    <td>{{diagnosis.Line}}</td>
+                    <td>{{diagnosis.Name}}</td>
+                    <td>{{diagnosis.Result}}</td>
+                    <td>{{diagnosis.EnterDoctor}}</td>
+                    <td>{{diagnosis.ConfirmationDate}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </ion-content>
+</ion-view>

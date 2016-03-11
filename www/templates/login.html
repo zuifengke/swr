@@ -1,0 +1,57 @@
+﻿
+<ion-view class="login-page">
+    <ion-content>
+
+        <div id="login-title"></div>
+        <div class="login-form">
+            <form id="form1">
+
+                <div id="login-doc"></div>
+                <div class="list list-inset  login-user">
+                    <label class="item item-input">
+                        <i class="icon ion-person placeholder-icon"></i>
+                        <input type="text" placeholder="用户名"  ng-model="user.UserName">
+                    </label>
+                </div>
+                <div class="list list-inset login-password">
+                    <label class="item item-input">
+                        <i class="icon ion-locked placeholder-icon"></i>
+                        <input type="password" placeholder="密码"  ng-model="user.Password">
+                    </label>
+                </div>
+
+
+
+                <div class="login-remember">
+                    <ul class="list">
+                        <li class="item item-toggle">
+                            记住用户名
+                            <label class="toggle toggle-positive">
+                                <input type="checkbox" checked="">
+                                <div class="track">
+                                    <div class="handle"></div>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="item item-toggle">
+                            记住密码
+                            <label class="toggle toggle-calm">
+                                <input type="checkbox" checked="">
+                                <div class="track">
+                                    <div class="handle"></div>
+                                </div>
+
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login-btn">
+
+                    <button class="button button-positive submit" ng-disabled="!user.UserName || !user.Password" ng-click="login()">登&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp录</button>
+                    <div class="cancel" ng-click="cancle()"></div>
+                </div>
+            </form>
+        </div>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,142 @@
+﻿/* Empty. Add your own CSS if you like */
+body { text-align: center; }
+/*ionic图标*/
+.fontsize { font-size: 30px; }
+/*   登录页样式 */
+.login-page { background-image: url(../img/doc_login_bg.png); background-repeat: no-repeat; background-size: cover; text-align: center; }
+#login-title { margin: 0 auto; margin-top: 50px; background-image: url(../img/title.png); height: 210px; width: 728px; }
+.login-form { margin: 0 auto; background-color: white; height: 1000px; width: 800px; }
+#login-doc { margin: 0 auto; background-image: url(../img/doc.png); height: 339px; width: 761px; }
+/*用户名输入框*/
+.login-user { margin: 0 auto; width: 662px; text-align: left; font-size: 60px; }
+    .login-user .item-input { padding: 0; margin: 0; border: inset solid 3px; border-color: #B6B6B7; }
+    .login-user .ion-person { font-size: 40px; width: 64px; height: 64px; color: white; background-color: #A6A6A6; text-align: center; line-height: normal; padding: 10px; }
+    .login-user input { line-height: normal; padding-left: 10px; font-size: 32px; height: 60px; }
+/*密码输入框*/
+.login-password { margin: 0 auto; margin-top: 20px; width: 662px; text-align: left; font-size: 60px; }
+    .login-password .item-input { padding: 0; margin: 0; border: inset solid 3px; border-color: #B6B6B7; }
+    .login-password .ion-locked { font-size: 40px; width: 64px; height: 64px; color: white; background-color: #A6A6A6; text-align: center; padding: 0; }
+    .login-password input { line-height: normal; padding-left: 10px; font-size: 32px; height: 60px; }
+
+.login-remember { margin: 0 auto; margin-top: 20px; width: 662px; text-align: left; }
+    .login-remember .list .item-toggle { font-size: 32px; color: #B6B6B7; line-height: normal; }
+
+.login-btn { margin: 0 auto; margin-top: 50px; width: 800px; height: 300px; background-color: #F2F2F2; }
+    .login-btn .submit { margin: 0 auto; margin-top: 50px; margin-left: 0; width: 667px; height: 86px; text-align: center; font-size: 32px; }
+    .login-btn .cancel { margin: 0 auto; margin-top: 20px; margin-left: 66px; position: absolute; background-image: url(../img/cancel.png); width: 667px; height: 86px; text-align: center; }
+
+/*首页样式*/
+.home-back { background-color: #0C377C; }
+.home-logo { margin: 0 auto; margin-top: 20px; background-image: url(../img/z4-logo.png); height: 77px; width: 511px; }
+.home { margin-top: 50px; }
+    .home .left { }
+        .home .left .bottom { margin-left: 50px; background-image: url(../img/left-bottom.png); height: 1090px; width: 424px; float: left; }
+        .home .left .title { margin-left: -20px; margin-top: 20px; background-image: url(../img/left-title.png); width: 452px; height: 74px; text-align: left; }
+            .home .left .title .font { font-size: 28px; color: white; margin: 25px 0 0 50px; position: absolute; }
+    .home .right { }
+        .home .right .top { background-image: url(../img/right-top-bg.png); height: 518px; width: 1532px; float: right; margin-right: 20px; }
+            .home .right .top .content { background-image: url(../img/top-content-bg.png); height: 484px; width: 465px; float: left; margin: 20px 20px 0 25px; }
+        .home .right .bottom { background-image: url(../img/right-bottom-bg.png); height: 609px; width: 1532px; float: right; margin-right: 20px; margin-top: 50px; }
+            .home .right .bottom .content { background-image: url(../img/bottom-content-bg.png); height: 561px; width: 1484px; float: left; margin: 20px 20px 0 25px; }
+/*床卡样式*/
+.bedcard-page { background-color: #6BBCEE; }
+.bedcard-left { background-color: white; width: 20%; height: 100%; float: left; text-align: left; }
+.bedcard-panel { width: 78%; height: 100%; background-color: #EFF8FF; float: right; }
+    .bedcard-panel .bedcard { width: 250px; height: 100px; float: left; margin-right: 10px; }
+.bedscroll { height: 96em; width: 100%; }
+.bedcard-card { height: 345px; width: 474px; float: left; margin: 20px 20px 20px 30px; }
+    .bedcard-card .top { height: 75px; width: 474px; background-image: url(../img/card-top.png); }
+        .bedcard-card .top .condition-red { height: 62px; width: 54px; background-image: url(../img/red.png); float: left; }
+        .bedcard-card .top .condition-blue { height: 62px; width: 54px; background-image: url(../img/blue.png); float: left; }
+        .bedcard-card .top .condition-yellow { height: 62px; width: 54px; background-image: url(../img/yellow.png); float: left; }
+        .bedcard-card .top .bed-num { height: 70px; width: 144px; background-image: url(../img/bed-num.png); float: right; margin: 5px 0 0 0; }
+        .bedcard-card .top .name { float: left; font-size: 40px; position: absolute; margin: 30px 0 0 50px; }
+        .bedcard-card .top .sex { float: left; font-size: 40px; position: absolute; margin: 30px 0 0 250px; }
+    .bedcard-card .bottom { height: 270px; width: 474px; background-image: url(../img/card-bottom.png); position: absolute; }
+        .bedcard-card .bottom .content { font-size: 30px; text-align: left; margin: 10px 0 0 20px; position: absolute; width: 100%; }
+            .bedcard-card .bottom .content .row { height: 50px; }
+
+/*搜索页样式*/
+.search-page { background-image: url(../img/bg.png); background-repeat: no-repeat; background-size: cover; text-align: center; }
+.search-bar { background-image: url(../img/search/search.png); width: 1332px; height: 87px; margin: 0 auto; margin-top: 100px; }
+.search-history { margin: 0 auto; }
+    .search-history .title { margin: 0 auto; height: 50px; width: 1500px; margin-top: 150px; }
+        .search-history .title .content { margin: 0 auto; height: 50px; width: 500px; float: left; color: white; }
+        .search-history .title .left-line { margin: 0 auto; border-top: 2px dashed white; height: 50px; width: 500px; color: white; float: left; }
+        .search-history .title .right-line { margin: 0 auto; border-top: 2px dashed white; height: 50px; width: 500px; color: white; float: right; }
+    .search-history .list { margin: 0 auto; width: 1350px; height: 800px; color: white; margin-top: 50px; }
+        .search-history .list .row { margin-top: 50px; }
+.search-clear { margin: 0 auto; width: 250px; height: 100px; }
+    .search-clear .delete-btn { margin: 0 auto; background-image: url(../img/delete.png); width: 48px; height: 48px; float: left; }
+    .search-clear .title { margin: 0 auto; color: white; float: right; margin-top: 14px; }
+/*个人信息页样式*/
+.docinfo-page { background-image: url(../img/right-bg.png); background-repeat: no-repeat; background-size: cover; text-align: center; }
+
+.docinfo-left { float: left; width: 300px; height: 100%; background: #0E2859; margin-left: -100%; }
+    .docinfo-left .menulist { }
+        .docinfo-left .menulist .menuitem { width: 100%; height: 100px; }
+            .docinfo-left .menulist .menuitem .people { background-image: url(../img/grxx-1.png); width: 48px; height: 48px; float: left; margin-left: 50px; margin-top: 50px; }
+            .docinfo-left .menulist .menuitem .setting { background-image: url(../img/jbsz.png); width: 48px; height: 48px; float: left; margin-left: 50px; margin-top: 50px; }
+            .docinfo-left .menulist .menuitem .version { background-image: url(../img/bbxx.png); width: 48px; height: 48px; float: left; margin-left: 50px; margin-top: 50px; }
+            .docinfo-left .menulist .menuitem .question { background-image: url(../img/yjfk.png); width: 48px; height: 48px; float: left; margin-left: 50px; margin-top: 50px; }
+            .docinfo-left .menulist .menuitem .select { color: #FFA200; float: left; margin-top: 60px; margin-left: 20px; }
+            .docinfo-left .menulist .menuitem .unselect { color: white; float: left; margin-top: 60px; margin-left: 20px; }
+
+.docinfo-right { float: left; width: 100%; height: 100%; }
+    .docinfo-right .content { margin-left: 300px; height: 100%; }
+        .docinfo-right .content .pic { margin: 0 auto; background-image: url(../img/photo.png); width: 282px; height: 282px; margin-top: 100px; }
+        .docinfo-right .content .doc-info { margin: 0 auto; width: 280px; height: 400px; color: white; text-align: left; }
+            .docinfo-right .content .doc-info .row { margin-top: 50px; }
+        .docinfo-right .content .history { margin: 0 auto; border-top: 2px dashed white; width: 1400px; height: 500px; }
+            .docinfo-right .content .history .title { margin-top: 50px; font-size: 40px; color: white; text-align: left; }
+            .docinfo-right .content .history .row { margin-top: 50px; color: white; }
+
+
+/*.tabs { height: 126px; }
+.homeImg { background-image: url(../img/home-select.png); }
+.homeImgSelected { background-image: url(../img/home-select.png); background-color: #17366F; width: 250px; height: 126px; background-repeat: no-repeat;background-position:center}*/
+/*标签页样式自定义*/
+.tabs { height: 120px; }
+.tab-item { }
+    .tab-item .icon { font-size: 60px; height: 80px; }
+.tabs-positive > .tabs { background-color: #264C95; }
+.tab-title { font-size: 24px; }
+
+.tab-bottom-left { background-image: url(../img/heren-logo.png); width: 258px;height: 60px; z-index: 99999; position: fixed; bottom:25px;left:25px;}
+.tab-bottom-right { background-image: url(../img/sys-name.png); width: 217px; height: 61px; z-index: 99999; position: fixed; bottom:25px;right:25px; }
+
+
+.tabs-top .tabs { height: 60px; position: unset; }
+.funcTab-content { top: 0px; margin-bottom: 185px; }
+/*.funcTab-content .scroll { height: 100%; }*/
+
+
+.bar .button.button-clear .icon:before, .bar .button.button-clear.icon:before, .bar .button.button-clear.icon-left:before, .bar .button.button-clear.icon-right:before { font-size: 46px; }
+.tabs-icon-left.tabs .tab-item .icon:before, .tabs-icon-left > .tabs .tab-item .icon:before, .tabs-icon-right.tabs .tab-item .icon:before, .tabs-icon-right > .tabs .tab-item .icon:before { font-size: 46px; }
+.bar .button.button-clear { font-size: 46px; }
+.bar-height { height: 50px; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.font-size-18 { font-size: 18px; }
+.font-size-16 { font-size: 16px; }
+.text-margin-left { margin-left: 30px; }
+.float-left { float: left; }
+.float-right { float: right; }
+.lightblue-bg { background-color: lightblue; }
+.lightyellow-bg { background-color: #FFF8D4; }
+
+.col-20px { -webkit-box-flex: 0; -webkit-flex: 0 0 20px; -moz-box-flex: 0; -moz-flex: 0 0 20px; -ms-flex: 0 0 20px; flex: 0 0 20px; max-width: 20px; }
+.col-240px { -webkit-box-flex: 0; -webkit-flex: 0 0 240px; -moz-box-flex: 0; -moz-flex: 0 0 240px; -ms-flex: 0 0 240px; flex: 0 0 240px; max-width: 240px; }
+.width-20px { width: 20px; }
+.width-240px { width: 240px; }
+.width-50 { width: 50%; }
+.width-33 { width: 33.3333%; }
+.width-100 { width: 100%; }
+.height-100 { height: 100%; }
+.padding-5px { padding: 5px; }
+.no-padding { padding: 0px; }
+.margin-top { margin-top: 20px; }
+
+.right-menu { z-index: 999; position: absolute; top: 60px; right: 0px; bottom: 120px; background-color: rgba(180,180,180,0.3); width: 140px; }
+    .right-menu .button { font-size: 80px; color: white; }
+.right-menu-content { position: absolute; bottom: 60px; left: 30px; right: 30px; }

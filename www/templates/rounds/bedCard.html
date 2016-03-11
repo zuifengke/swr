@@ -1,0 +1,63 @@
+﻿
+<ion-view view-title="BedCard" class="bedcard-page">
+
+    <div class="bedcard-left">
+        <ion-list>
+            <ion-item nav-clear menu-close href="#"  ng-click="getMyBedcards()">
+                <i class="icon ion-person fontsize">   本人  ({{PageCount}})</i>
+
+            </ion-item>
+            <ion-item nav-clear menu-close href="#" ng-click="">
+                <i class="icon ion-person-stalker fontsize">    本科室 100</i>
+
+            </ion-item>
+            <ion-item nav-clear menu-close href="#">
+                <i class="icon ion-settings fontsize">   自定义</i>
+            </ion-item>
+            <ion-item nav-clear menu-close href="#">
+                <i class="icon ion-android-folder-open fontsize">    全部 1000</i>
+            </ion-item>
+        </ion-list>
+    </div>
+    <div class="bedcard-panel">
+        <ion-scroll class="bedscroll">
+            <div ng-repeat="patient in patientList">
+
+                <div class="bedcard-card" ng-click="getRoundsInfos(patient.PatientID)">
+                    <div class="top">
+                        <div class="condition-red"></div>
+                        <div class="name">{{patient.Name}}</div>
+                        <div class="sex">{{patient.GenderName}}</div>
+                        <div class="bed-num"></div>
+                    </div>
+                    <div class="bottom">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col col-75">{{patient.PatientID}}</div>
+                                <div class="col">{{patient.Age}}岁</div>
+                            </div>
+
+                            <div class="row">入&nbsp;&nbsp;院：{{patient.VisitTime}}</div>
+
+                            <div class="row">天&nbsp;&nbsp;数：{{patient.HospitalInDays}}天</div>
+
+                            <div class="row">医&nbsp;&nbsp;生：{{patient.DoctorInCharge}}</div>
+
+                            <div class="row">过敏史：{{patient.Allergy}}</div>
+
+                            <div class="row">诊&nbsp;&nbsp;断：{{patient.Diagnosis}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </ion-scroll>
+
+    </div>
+
+
+
+
+
+</ion-view>

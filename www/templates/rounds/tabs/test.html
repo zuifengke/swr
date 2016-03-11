@@ -1,0 +1,77 @@
+﻿<ion-view view-title="Test">
+    <ion-content class="funcTab-content">
+        <div class="row">
+            <div class="col col-240px text-left stable-bg">
+                <ion-scroll id="testScroll">
+                    <ion-list>
+                        <ion-item ng-repeat="test in tests" ng-click="testClick(test.Id)">
+                            <p>
+                                {{test.TypeCode}}&nbsp;{{test.Time}}
+                                <div ng-switch="test.Status">
+                                    <div ng-switch-when="完成">
+                                        <div class="badge badge-balanced">完成</div>
+                                    </div>
+                                    <div ng-switch-when="已付费">
+                                        <div class="badge badge-calm">已付费</div>
+                                    </div>
+                                    <div ng-switch-when="开立">
+                                        <div class="badge badge-energized">开立</div>
+                                    </div>
+                                </div>
+                            </p>
+                            <p>{{test.Content}}</p>
+                        </ion-item>
+                    </ion-list>
+                </ion-scroll>
+            </div>
+            <div class="col lightyellow-bg text-center padding">
+                <div id="testRow1" class="row text-left">
+                    <div class="col">流水单号：{{currentTest.testNo}}</div>
+                    <div class="col">开单科室：{{currentTest.applyDept}}</div>
+                    <div class="col">开单医生：{{currentTest.applyDoctor}}</div>
+                    <div class="col">开单时间：{{currentTest.applyTime}}</div>
+                </div>
+                <div id="testRow2" class="row text-left">
+                    <div class="col col-25">检验类型：{{currentTest.type}}</div>
+                    <div class="col col-25">检验科室：{{currentTest.testDept}}</div>
+                    <div class="col col-50">检验状态：{{currentTest.status}}</div>
+                </div>
+                <div id="testRow3" class="row text-left" ng-repeat="item in currentTest.itemName">
+                    <div class="col col-75"><span ng-show="$index==0">项目名称：</span><span ng-show="$index!=0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{item}}</div>
+                    <div class="col col-25"><span ng-show="$index==0">标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本：</span><span ng-show="$index!=0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{currentTest.specimen[$index]}}</div>
+                </div>
+                <!--<br />-->
+                <div class="row padding" ng-if="currentTest.results.length>0">
+                    <ion-scroll id="testResultScroll" class="width-100 margin-top">
+                        <table class="selectionTable">
+                            <thead>
+                                <tr>
+                                    <th>体液检验</th>
+                                    <th>结果</th>
+                                    <th>异常</th>
+                                    <th>正常参考值</th>
+                                    <th>单位</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="result in currentTest.results">
+                                    <td>{{result.Name}}</td>
+                                    <td>{{result.ResultValue}}</td>
+                                    <td class="assertive">
+                                        <span ng-switch="result.LNU">
+                                            <span ng-switch-when="N"></span>
+                                            <span ng-switch-when="L">↓</span>
+                                            <span ng-switch-when="H">↑</span>
+                                        </span>
+                                    </td>
+                                    <td>{{result.Lower_Upper}}</td>
+                                    <td>{{result.ResultUnit}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ion-scroll>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
